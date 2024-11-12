@@ -22,7 +22,7 @@ export class LocalFileStorage implements IStorage {
     if (!fs.existsSync(LOCAL_STORAGE_PATH)) {
       fs.mkdirSync(LOCAL_STORAGE_PATH, {
         recursive: true,
-        mode: '488',
+        mode: 488,
       })
     }
   }
